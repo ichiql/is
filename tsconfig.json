@@ -13,16 +13,9 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "isolatedModules": true,
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ESNext"
-    ],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "target": "ESNext",
     "skipLibCheck": true
   },
-  "include": [
-    "src/**/*.ts",
-    "jest.config.ts"
-  ]
+  "include": ["src/**/*.ts", "jest.config.ts"]
 }

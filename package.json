@@ -29,7 +29,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "vite build && tsc -p tsconfig.build.json",
-    "format": "pnpm dlx prettier --write './**/*.{ts,tsx}' && pnpm dlx sort-package-json && pnpm dlx sort-compiler-options",
+    "format": "pnpm dlx sort-package-json && pnpm dlx sort-compiler-options && pnpm dlx sort-compiler-options -c tsconfig.build.json && pnpm dlx prettier --write './**/*.{ts,tsx}' 'tsconfig*.json'",
     "lint": "eslint ./src/*",
     "prepublish": "pnpm build",
     "test": "jest"
